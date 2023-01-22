@@ -1,0 +1,139 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  text-decoration: none;
+  font-family: bree;
+}
+
+@font-face {
+  font-family: bree;
+  src: url(breelight.otf);
+  font-style: normal;
+  font-weight: 300;
+
+}
+
+/* Header */
+header{
+  height: 100px;
+  width: 100%;
+  background-color: #9D6532;
+  display: inline-flex;
+  position: fixed;
+  z-index: 2;
+}
+
+
+header img{
+  max-height: 80px;
+  max-width: 80px;
+  margin: auto 150px;
+}
+
+.nav-bar{
+  width: 600px;
+  height: 100px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+
+}
+
+.nav-bar ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar ul li{
+  margin: auto 30px;
+  list-style: none;
+  padding: auto;
+}
+
+.nav-bar ul li a{
+  font-size: 24px;
+  position: relative;
+}
+
+.nav-bar ul li a:hover{
+  color: #314420;
+}
+
+
+/* Main image*/
+
+.main{
+  top: 100px;
+  width: 100%;
+  height: 800px;
+  background-image: url("images/main-falls.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.welcome{
+  grid-area: 3 / 2 / span 2 / span 3;
+  background-color: #314420;
+  border-radius: 20px;
+  display: block;
+}
+
+.welcome h1{
+  margin: 15px auto 15px 50px;
+  font-size: 70px;
+}
+.welcome h2{
+  margin: 15px auto 15px 15px;
+}
+
+.book-now{
+  grid-area: 5 / 4 / span 1 / span 1;
+  background-color: #9D6532;
+
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-now:hover{
+  background-color: #314420;
+}
+
+/* accommodation */
+
+.accommodation{
+  width: 100%;
+  height: 1200px;
+  display: block;
+  margin-top: auto;
+  position: relative;
+  top: 100px;
+}
+
+.accommodation-title{
+
+
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 50px;
+}
+.accommodation-title h1{
+  color: #314420;
+    font-size: 45px;
+    font-weight: 200;
+}
+
+.color-bar{
+  width: 100%;
+  height: 20px;
+  background-color: #9D6532;
+}
